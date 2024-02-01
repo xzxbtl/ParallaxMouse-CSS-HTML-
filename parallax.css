@@ -1,0 +1,30 @@
+{% load static %}
+      body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Чтобы изображение не прокручивалось по горизонтали */
+      }
+
+    .parallax-container {
+      height: 500px; /* фиксированная высота контейнера */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mouse-parallax {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* задаем фиксированную высоту для родительского элемента */
+      overflow: hidden;
+      background-image: url("your-background-image.jpg"); /* Задаем фоновое изображение здесь */
+      background-size: cover;
+    }
+
+    .mouse-parallax-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.1s ease;
+    }
