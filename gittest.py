@@ -11,6 +11,7 @@ async def time_screen():
             print(f"Текущее время: {formatted_time}")
 
 asyncio.run(time_screen())
+print('Таймер запущен')
 
 def random():
     number = float(input("Введите число от 1 до 10 : "))
@@ -25,4 +26,6 @@ def random():
 
 
 random()
+
+
 
